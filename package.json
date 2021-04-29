@@ -1,6 +1,6 @@
 {
   "name": "@jsagon/cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "JSagon CLI",
   "main": "./dist/bin/index.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "framework",
     "web",
     "rest",
-    "app"
+    "app",
+    "jsagon"
   ],
   "author": "JSagon - Jhonatan S. Gonçalves",
   "license": "MIT",
@@ -47,8 +48,7 @@
   },
   "files": [
     "LICENSE",
-    "History.md",
-    "readme.md",
+    "README.md",
     "dist/"
   ],
   "dependencies": {

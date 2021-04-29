@@ -1,7 +1,7 @@
 import chalk, {} from 'chalk'
 
 export const showLogo = (): void => {
-  console.log(chalk.yellow(
+  console.log(chalk.rgb(240, 240, 240)(
         `
          ██╗███████╗ █████╗  ██████╗  ██████╗ ███╗   ██╗
          ██║██╔════╝██╔══██╗██╔════╝ ██╔═══██╗████╗  ██║
@@ -13,7 +13,7 @@ export const showLogo = (): void => {
 }
 
 export const showSuccessInstall = (): void => {
-  console.log(chalk.yellow(
+  console.log(chalk.rgb(240, 240, 240)(
         `
    \\    / _  |  _  _  ._ _   _  | 
     \\/\\/ (/_ | (_ (_) | | | (/_ o 

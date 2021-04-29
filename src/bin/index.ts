@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Command } from 'commander'
 import CommandFactory from '../commands/CommandFactory'
-import { showLogo } from '../view/ui'
+import { showLogo } from '../screen/ui'
 const program = new Command()
 
 class Bootstrap {
@@ -11,7 +11,7 @@ class Bootstrap {
     program
       .version('0.1.0')
       .name('jsagon')
-      .usage('[command]').arguments('<command> [name]').description('JSagon CLI', {
+      .usage('<command> [name]').arguments('<command> [name]').description('JSagon CLI', {
         command: 'Command to be executed',
         name: 'Project name folder'
       })
