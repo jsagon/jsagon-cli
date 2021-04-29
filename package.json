@@ -1,7 +1,7 @@
 {
   "name": "@jsagon/cli",
   "version": "0.0.3",
-  "description": "JSagon CLI",
+  "description": "JSagon CLI - A command-line tool that helps you create JSagon F. applications",
   "main": "./dist/bin/index.js",
   "scripts": {
     "start": "node dist/bin/index.js",
@@ -23,7 +23,11 @@
   ],
   "author": "JSagon - Jhonatan S. Gonçalves",
   "license": "MIT",
-  "homepage": "http://jsagon.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsagon/jsagon-cli"
+  },
+  "homepage": "https://jsagon.com/jsagon-nodejs-framework",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
