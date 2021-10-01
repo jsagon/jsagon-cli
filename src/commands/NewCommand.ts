@@ -28,6 +28,7 @@ class NewCommand extends AbstractCommand {
       await this.askProjectName()
       await this.askLanguage()
       await this.askViewEngine()
+      await this.askArchitecture()
 
       const totalNumberOfSteps = 3
       this.steps = new Steps(totalNumberOfSteps)
@@ -108,6 +109,25 @@ class NewCommand extends AbstractCommand {
         ])
 
       this.packageManager = packageManager
+    }
+
+    /**
+     * Asks for Package Manager to use
+     *
+     */
+    private async askArchitecture (): Promise<void> {
+      const { architecture } = await inquirer
+        .prompt([
+          {
+            type: 'rawlist',
+            name: 'architecture',
+            message: 'Architecture?',
+            default: false,
+            choices: [{ value: false, name: 'Multi app' }, { value: true, name: 'Mono app' }]
+          }
+        ])
+
+      this.monoapp = architecture
     }
 
     /**
